@@ -1,0 +1,115 @@
+.tabuleiro {
+    display: grid;
+    grid-template-columns: repeat(15, 1fr);
+    grid-template-rows: repeat(15, 1fr);
+    width: calc(100vw/2.7);
+    height: calc(100vw/2.7); 
+    border: 2px solid var(--cor-preto);
+    background-color: var(--cor-fundo-tabuleiro);
+}
+
+.tabuleiro__base{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    border: 1px solid var(--cor-preto)
+}
+
+.base__fundo {
+    background-color: var(--cor-fundo-tabuleiro);
+    grid-area: 2 / 2 / 6 / 6;
+    border: 1px solid var(--cor-preto);
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.tabuleiro__centro {
+    background-image: url("./centro.png");
+    grid-area: 7 / 7 / 10 / 10;
+    background-size: cover;
+}
+
+.base-verde {
+    background-color: var(--cor-verde);
+    grid-area: 1 / 1 / 7 / 7;
+}
+
+.base-verde .base__fundo__start {
+    background-color: var(--cor-verde);
+    transform: rotate(45deg);
+}
+
+.base-vermelho {
+    background-color: var(--cor-vermelho);
+    grid-area: 1 / 10 / 7 / 16;
+}
+
+.base-vermelho .base__fundo__start {
+    background-color: var(--cor-vermelho);
+    transform: rotate(45deg);
+}
+
+.base-azul {
+    background-color: var(--cor-azul);
+    grid-area: 10 / 1 / 16 / 7;
+}
+
+.base-azul .base__fundo__start {
+    background-color: var(--cor-azul);
+    transform: rotate(45deg);
+}
+
+.base-laranja {
+    background-color: var(--cor-laranja);
+    grid-area: 10 / 10 / 16 / 16;
+}
+
+.base-laranja .base__fundo__start {
+    background-color: var(--cor-laranja);
+    transform: rotate(45deg);
+}
+
+.tabuleiro__casa {
+    border: 1px solid var(--cor-preto);
+}
+
+.tabuleiro__casa-verde {
+    background-color: var(--cor-verde);
+}
+
+.tabuleiro__casa-azul {
+    background-color: var(--cor-azul);
+}
+
+.tabuleiro__casa-laranja {
+    background-color: var(--cor-laranja);
+}
+
+.tabuleiro__casa-vermelho {
+    background-color: var(--cor-vermelho);
+}
+
+.tabuleiro__casa-save {
+    border: 1px solid var(--cor-preto);
+    background-image: url('./Estrela.png');
+    background-size: cover;
+}
+
+#startVerde1, #startVermelho1, #startAzul1, #startLaranja1 {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+#startVerde2, #startVermelho2, #startAzul2, #startLaranja2  {
+    grid-area: 2 / 3 / 3 / 4 ;
+}
+
+#startVerde3, #startVermelho3, #startAzul3, #startLaranja3 {
+    grid-area: 3 / 2 / 4 / 3 ;
+}
+
+#startVerde4, #startVermelho4, #startAzul4, #startLaranja4{
+    grid-area: 3 / 3 / 4 / 4;
+}
+

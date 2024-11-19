@@ -1,0 +1,9 @@
+.tela-principal {
+    background-color: var(--cor-contraste-leve);
+    height: calc(100vh - var(--espacamento-cabecalho));
+    width: 100vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

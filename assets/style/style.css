@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root {
+    --cor-principal: #243642;
+    --cor-contraste: #E2F1E7;
+    --cor-contraste-leve: #C4D7FF;
+    --cor-contraste-medio: #387478;
+    --cor-fundo-tabuleiro: #f5f5f5;
+    --cor-preto: #212121;
+
+    --cor-azul: blue;
+    --cor-verde: green;
+    --cor-laranja: orange;
+    --cor-vermelho: red;
+
+    --fonte-principal: "Ubuntu", sans-serif;
+
+    --espacamento-cabecalho: 5rem;
+}
+
+body {
+    font-family: var(--fonte-principal);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+    height: 100vh;
+}
