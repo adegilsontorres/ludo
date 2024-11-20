@@ -8,6 +8,7 @@
     <link rel="icon" href="./assets/Ludo icon.ico">
     <link rel="stylesheet" href="assets/style/style.css">
     <link rel="stylesheet" href="assets/style/cabecalho/cabecalho.css">
+    <link rel="stylesheet" href="assets/style/dado/dado.css">
     <link rel="stylesheet" href="assets/style/tabuleiro/tabuleiro.css">
     <link rel="stylesheet" href="assets/style/tela-principal/tela-principal.css">
 </head>
@@ -22,46 +23,59 @@
     </header>
 
     <section class="tela-principal">
-                <div class="tabuleiro">
-                    <div class="tabuleiro__base base-verde">
-                        <div class="base__fundo">
-                            <div class="base__fundo__start" id="startVerde1"></div>
-                            <div class="base__fundo__start" id="startVerde2"></div>
-                            <div class="base__fundo__start" id="startVerde3"></div>
-                            <div class="base__fundo__start" id="startVerde4"></div>
+        <div class="tabuleiro">
+            <div class="tabuleiro__base base-verde">
+                <div class="base__fundo">
+                    <div class="base__fundo__start" id="startVerde1">
+                        <div class="player player-verde" id="player-verde-1">
                         </div>
                     </div>
-                    <div class="tabuleiro__base base-vermelho">
-                        <div class="base__fundo">
-                            <div class="base__fundo__start" id="startVermelho1"></div>
-                            <div class="base__fundo__start" id="startVermelho2"></div>
-                            <div class="base__fundo__start" id="startVermelho3"></div>
-                            <div class="base__fundo__start" id="startVermelho4"></div>
+                    <div class="base__fundo__start" id="startVerde2">
+                        <div class="player player-verde" id="player-verde-2">
                         </div>
                     </div>
-                    <div class="tabuleiro__base base-azul">
-                        <div class="base__fundo">
-                            <div class="base__fundo__start" id="startAzul1"></div>
-                            <div class="base__fundo__start" id="startAzul2"></div>
-                            <div class="base__fundo__start" id="startAzul3"></div>
-                            <div class="base__fundo__start" id="startAzul4"></div>
+                    <div class="base__fundo__start" id="startVerde3">
+                        <div class="player player-verde" id="player-verde-3">
                         </div>
                     </div>
-                    <div class="tabuleiro__base base-laranja">
-                        <div class="base__fundo">
-                            <div class="base__fundo__start" id="startLaranja1"></div>
-                            <div class="base__fundo__start" id="startLaranja2"></div>
-                            <div class="base__fundo__start" id="startLaranja3"></div>
-                            <div class="base__fundo__start" id="startLaranja4"></div>
+                    <div class="base__fundo__start" id="startVerde4">
+                        <div class="player player-verde" id="player-verde-4">
                         </div>
-                    </div>
-                    <div class="tabuleiro__centro">
                     </div>
                 </div>
-                
-            </body>
+            </div>
+            <div class="tabuleiro__base base-vermelho">
+                <div class="base__fundo">
+                    <div class="base__fundo__start" id="startVermelho1"></div>
+                    <div class="base__fundo__start" id="startVermelho2"></div>
+                    <div class="base__fundo__start" id="startVermelho3"></div>
+                    <div class="base__fundo__start" id="startVermelho4"></div>
+                </div>
+            </div>
+            <div class="tabuleiro__base base-azul">
+                <div class="base__fundo">
+                    <div class="base__fundo__start" id="startAzul1"></div>
+                    <div class="base__fundo__start" id="startAzul2"></div>
+                    <div class="base__fundo__start" id="startAzul3"></div>
+                    <div class="base__fundo__start" id="startAzul4"></div>
+                </div>
+            </div>
+            <div class="tabuleiro__base base-laranja">
+                <div class="base__fundo">
+                    <div class="base__fundo__start" id="startLaranja1"></div>
+                    <div class="base__fundo__start" id="startLaranja2"></div>
+                    <div class="base__fundo__start" id="startLaranja3"></div>
+                    <div class="base__fundo__start" id="startLaranja4"></div>
+                </div>
+            </div>
+            <div class="tabuleiro__centro">
+            </div>
+        </div>
 
-    <script src="script.js"></script>
+    <div class="dado" title="Jogar os dados"></div>
+</body>
+
+<script src="./app/script.js" type="module"></script>
 </body>
 
 </html>
