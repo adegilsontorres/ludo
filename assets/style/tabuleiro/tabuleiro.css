@@ -25,6 +25,12 @@
     grid-template-rows: repeat(4, 1fr);
 }
 
+.base__fundo__start {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .tabuleiro__centro {
     background-image: url("./centro.png");
     grid-area: 7 / 7 / 10 / 10;
@@ -113,3 +119,42 @@
     grid-area: 3 / 3 / 4 / 4;
 }
 
+.player {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    border: 1px solid var(--cor-preto);
+
+    z-index: 2;
+}
+
+.player-verde {
+    background-color: var(--cor-verde);
+}
+
+@media screen and (max-width: 1024px) {
+
+    .tabuleiro {
+        width: calc(100vw/2.5);
+        height: calc(100vw/2.5);
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+
+    .tabuleiro {
+        width: calc(100vw/2);
+        height: calc(100vw/2);
+    }
+    
+}
+
+@media screen and (max-width: 420px) {
+
+    .tabuleiro {
+        width: calc(100vw/1.5);
+        height: calc(100vw/1.5);
+    }
+    
+}
