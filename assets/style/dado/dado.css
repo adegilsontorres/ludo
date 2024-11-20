@@ -1,0 +1,31 @@
+.dado {
+    background-image: url('./Dado.png');
+    background-size: cover;
+
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+
+    position: fixed;
+    top: 10rem;
+    right: 10rem;
+
+    box-shadow: 2px 2px 6px var(--cor-preto);
+    animation: flutuar 2s ease-in-out infinite;
+}
+
+.dado:hover {
+    transition: .7s;
+    cursor: pointer;
+    box-shadow: 4px 4px 12px var(--cor-preto);
+    /* animation: flutuar 0s; */
+}
+
+@keyframes flutuar{
+	0%, 100%{
+		transform:translatey(0)
+	}
+	50%{
+		transform:translatey(-10px)
+	}
+}
