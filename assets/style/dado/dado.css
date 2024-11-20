@@ -15,10 +15,33 @@
 }
 
 .dado:hover {
-    transition: .7s;
+    transition: .4s;
     cursor: pointer;
     box-shadow: 4px 4px 12px var(--cor-preto);
-    /* animation: flutuar 0s; */
+}
+
+.sorteado-1 {
+    background-image: url('./1-Dado.png');
+}
+
+.sorteado-2 {
+    background-image: url('./2-Dado.png');
+}
+
+.sorteado-3 {
+    background-image: url('./3-Dado.png');
+}
+
+.sorteado-4 {
+    background-image: url('./4-Dado.png');
+}
+
+.sorteado-5 {
+    background-image: url('./5-Dado.png');
+}
+
+.sorteado-6 {
+    background-image: url('./6-Dado.png');
 }
 
 @keyframes flutuar{
